@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Inscrição com comprovante</title>
+</head>
+<body>
+
+<h1>Inscrição</h1>
+
+<form id="form-inscricao">
+
+  <input
+    type="text"
+    name="nome"
+    placeholder="Nome"
+    required
+  >
+
+  <input
+    type="email"
+    name="email"
+    placeholder="Email"
+    required
+  >
+
+  <input
+    type="number"
+    name="idade"
+    min="16"
+    required
+  >
+
+  <label>
+    <input
+      type="checkbox"
+      name="interesses"
+      value="backend"
+    >
+    Backend
+  </label>
+
+  <label>
+    <input
+      type="checkbox"
+      name="interesses"
+      value="docker"
+    >
+    Docker
+  </label>
+
+  <label>
+    <input
+      type="checkbox"
+      name="interesses"
+      value="testes"
+    >
+    Testes
+  </label>
+
+  <textarea
+    name="observacoes"
+    placeholder="Observações"
+  ></textarea>
+
+  <input
+    type="file"
+    id="comprovante"
+    name="comprovante"
+    accept="application/pdf,image/png,image/jpeg"
+    required
+  >
+
+  <label>
+    <input
+      type="checkbox"
+      id="aceitaTermos"
+      name="aceitaTermos"
+      required
+    >
+    Aceito os termos
+  </label>
+
+  <button type="submit">
+    Enviar
+  </button>
+
+</form>
+
+<pre id="resultado"></pre>
+
+<script src="app.js"></script>
+
+</body>
+</html>
